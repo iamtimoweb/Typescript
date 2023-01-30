@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Logger</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="py-5 bg-white text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mb-4 text-center">Financial Logger</h3>
+
+                    <!-- output list -->
+                    <ul class="list-group w-75 mx-auto">
+
+                    </ul>
+                    <!-- end of output list -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form class="addNewItemForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">
+                                    Type:
+                                </label>
+                                <select id="type" class="form-select" required>
+                                    <option value="invoice">Invoice</option>
+                                    <option value="payment">Payment</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputAddress" class="form-label">To/From:</label>
+                                <input type="text" class="form-control" id="toFrom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputAddress" class="form-label">Details</label>
+                                <input type="text" class="form-control" id="details" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputAddress" class="form-label">Amount($)</label>
+                                <input type="text" class="form-control" id="amount" required>
+                            </div>
+                            <div class="col-12 flex justify-content-end">
+                                <button class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p>
+                        &copy;Copyright
+                        <script>
+                            document.write(new Date().getFullYear()) 
+                        </script>
+                        all rights reserved. Designed by: <a href="https://facebook.com/timoweb" class="btn-link">Timo
+                            Web</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
